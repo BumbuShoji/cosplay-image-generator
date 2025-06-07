@@ -1,0 +1,6 @@
+{
+  "name": "Cosplay Image Generator",
+  "description": "An application that allows users to upload their photo and a character image to generate a unique AI-powered cosplay image. It uses the Gemini API for image generation, features a quota system, and keeps a history of generated images.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

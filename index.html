@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosplay Image Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pearl': '#FAF8FF',        // BG Base
+            'frosted': '#F2EFFE',      // Card BG
+            'plum': '#4E3D66',         // Primary Text / Icons
+            'candy': '#C12E77',        // Headline / CTA Focus
+            'mochi': '#AEEBFF',        // Secondary Accent (was mochi-blue)
+            'mint-foam': '#C8F9E2',    // Success
+            'cherry-red': '#E84057',   // Danger
+            'butter-yellow': '#FFF4BD',// Warning / Quota
+          },
+          fontFamily: {
+            heading: ['Quicksand', 'Zen Maru Gothic', 'Montserrat', 'sans-serif'],
+            body: ['Open Sans', 'Noto Sans JP', 'sans-serif'],
+            decorative: ['"Kinkee"', '"Sweetie Pie"', 'cursive'],
+          },
+          fontSize: {
+            'xs': '12px',
+            'sm': '14px',
+            'base': '16px',
+            'lg': '20px',
+            'xl': '24px',
+            '2xl': '32px',
+            '3xl': '40px',
+          },
+          lineHeight: {
+            'body': '1.6',
+            'heading': '1.3',
+            '3': '.75rem', 
+            '4': '1rem',   
+            '5': '1.25rem',
+            '6': '1.5rem', 
+            '7': '1.75rem',
+            '8': '2rem',   
+            '9': '2.25rem',
+            '10': '2.5rem',
+            'tight': '1.25',
+            'snug': '1.375',
+            'normal': '1.5',
+            'relaxed': '1.625',
+            'loose': '2',
+          },
+          borderRadius: {
+            'lg': '0.5rem',
+            'xl': '0.75rem',
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "react-router": "https://esm.sh/react-router@^7.6.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-pearl font-body text-plum text-base leading-body">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
